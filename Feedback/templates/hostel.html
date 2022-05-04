@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hostel Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Lora">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color:rgb(34, 34, 33)">
+
+<div class="container">
+  
+  
+        
+    </div><hr>
+    <br><br>
+    <div class="row">
+      <div class="col-sm-4">
+        
+      </div>
+      <div class="col-sm-4">
+          <h4>Please provide your feedback</h4>
+            
+            <form action="{{ url_for('hostel') }}" method="POST">
+              <div class="form-group">
+                <label for="usr">ENTER YOUR BLOCK  </label>
+                <input name="bname" type="text" class="form-control" id="usr">
+              </div>
+              
+                           
+              <label>Rate your ROOMS </label><br>
+              <div class="rate">
+                <input type="radio" id="cstar5" name="room" value="5" />
+                <label for="cstar5" title="text">5 stars</label>
+                <input type="radio" id="cstar4" name="room" value="4" />
+                <label for="cstar4" title="text">4 stars</label>
+                <input type="radio" id="cstar3" name="room" value="3" />
+                <label for="cstar3" title="text">3 stars</label>
+                <input type="radio" id="cstar2" name="room" value="2" />
+                <label for="cstar2" title="text">2 stars</label>
+                <input type="radio" id="cstar1" name="room" value="1" />
+                <label for="cstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate your MESS FOOD </label><br>
+              <div class="rate">
+                <input type="radio" id="pstar5" name="food" value="5" />
+                <label for="pstar5" title="text">5 stars</label>
+                <input type="radio" id="pstar4" name="food" value="4" />
+                <label for="pstar4" title="text">4 stars</label>
+                <input type="radio" id="pstar3" name="food" value="3" />
+                <label for="pstar3" title="text">3 stars</label>
+                <input type="radio" id="pstar2" name="food" value="2" />
+                <label for="pstar2" title="text">2 stars</label>
+                <input type="radio" id="pstar1" name="food" value="1" />
+                <label for="pstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate your MESS STAFF SERVICE </label><br>
+              <div class="rate">
+                <input type="radio" id="wstar5" name="staff" value="5" />
+                <label for="wstar5" title="text">5 stars</label>
+                <input type="radio" id="wstar4" name="staff" value="4" />
+                <label for="wstar4" title="text">4 stars</label>
+                <input type="radio" id="wstar3" name="staff" value="3" />
+                <label for="wstar3" title="text">3 stars</label>
+                <input type="radio" id="wstar2" name="staff" value="2" />
+                <label for="wstar2" title="text">2 stars</label>
+                <input type="radio" id="wstar1" name="staff" value="1" />
+                <label for="wstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate your LAUNDRY </label><br>
+              <div class="rate">
+                <input type="radio" id="clstar5" name="ld" value="5" />
+                <label for="clstar5" title="text">5 stars</label>
+                <input type="radio" id="clstar4" name="ld" value="4" />
+                <label for="clstar4" title="text">4 stars</label>
+                <input type="radio" id="clstar3" name="ld" value="3" />
+                <label for="clstar3" title="text">3 stars</label>
+                <input type="radio" id="clstar2" name="ld" value="2" />
+                <label for="clstar2" title="text">2 stars</label>
+                <input type="radio" id="clstar1" name="ld" value="1" />
+                <label for="clstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate WIFI SERVICES </label><br>
+              <div class="rate">
+                <input type="radio" id="astar5" name="wifi" value="5" />
+                <label for="astar5" title="text">5 stars</label>
+                <input type="radio" id="astar4" name="wifi" value="4" />
+                <label for="astar4" title="text">4 stars</label>
+                <input type="radio" id="astar3" name="wifi" value="3" />
+                <label for="astar3" title="text">3 stars</label>
+                <input type="radio" id="astar2" name="wifi" value="2" />
+                <label for="astar2" title="text">2 stars</label>
+                <input type="radio" id="astar1" name="wifi" value="1" />
+                <label for="astar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate HOUSE KEEPING </label><br>
+              <div class="rate">
+                <input type="radio" id="lstar5" name="hk" value="5" />
+                <label for="lstar5" title="text">5 stars</label>
+                <input type="radio" id="lstar4" name="hk" value="4" />
+                <label for="lstar4" title="text">4 stars</label>
+                <input type="radio" id="lstar3" name="hk" value="3" />
+                <label for="lstar3" title="text">3 stars</label>
+                <input type="radio" id="lstar2" name="hk" value="2" />
+                <label for="lstar2" title="text">2 stars</label>
+                <input type="radio" id="lstar1" name="hk" value="1" />
+                <label for="lstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate WARDEN AND OTHER STAFF SERVICES </label><br>
+              <div class="rate">
+                <input type="radio" id="sstar5" name="warden" value="5" />
+                <label for="sstar5" title="text">5 stars</label>
+                <input type="radio" id="sstar4" name="warden" value="4" />
+                <label for="sstar4" title="text">4 stars</label>
+                <input type="radio" id="sstar3" name="warden" value="3" />
+                <label for="sstar3" title="text">3 stars</label>
+                <input type="radio" id="sstar2" name="warden" value="2" />
+                <label for="sstar2" title="text">2 stars</label>
+                <input type="radio" id="sstar1" name="warden" value="1" />
+                <label for="sstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>HOW QUICK ARE YOUR PROBLEMS SOLVED ? </label><br>
+              <div class="rate">
+                <input type="radio" id="fcstar5" name="prob" value="5" />
+                <label for="fcstar5" title="text">5 stars</label>
+                <input type="radio" id="fcstar4" name="prob" value="4" />
+                <label for="fcstar4" title="text">4 stars</label>
+                <input type="radio" id="fcstar3" name="prob" value="3" />
+                <label for="fcstar3" title="text">3 stars</label>
+                <input type="radio" id="fcstar2" name="prob" value="2" />
+                <label for="fcstar2" title="text">2 stars</label>
+                <input type="radio" id="fcstar1" name="prob" value="1" />
+                <label for="fcstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <div class="form-group">
+                <label for="comment">Additional Comments (if any):</label>
+                <textarea class="form-control" rows="5" id="comment" name="hcomment"></textarea>
+              </div>
+               
+              <br>
+              <input type="submit" name="submit" value="Submit" class="btn btn-success">
+            </form>
+      </div>
+    </div>
+    <hr>
+
+    <center>
+      <div>
+        <a href="/"><button type="submit" ">HOMEPAGE
+          <style>button{font-size: medium;
+          padding: 15px 32px;
+          text-align: center; height: fit-content;
+          border-radius: 40px;
+          background-color: rgb(60, 60, 196);
+          color: rgb(236, 236, 226);
+          font-weight: bold;}</style></button></a>
+      </div>   
+    </center>
+
+
+     
+    <br>
+    <br>
+    <hr>
+</div>
+
+</body>
+</html>
+
+
+

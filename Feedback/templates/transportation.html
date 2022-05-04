@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Transport Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Lora">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color:rgb(34, 34, 33)">
+
+<div class="container">
+  
+  
+        
+    </div><hr>
+    <br><br>
+    <div class="row">
+      <div class="col-sm-4">
+        
+      </div>
+      <div class="col-sm-4">
+          <h4>Please provide your feedback</h4>
+            
+            <form action="{{ url_for('transportation') }}" method="POST">
+              <div class="form-group">
+                <label for="usr">ENTER YOUR BUS ROUTE NUMBER </label>
+                <input name="routenumber" type="text" class="form-control" id="usr">
+              </div>
+              
+                           
+              <label>Rate your BUS CONDITION  </label><br>
+              <div class="rate">
+                <input type="radio" id="cstar5" name="buscondition" value="5" />
+                <label for="cstar5" title="text">5 stars</label>
+                <input type="radio" id="cstar4" name="buscondition" value="4" />
+                <label for="cstar4" title="text">4 stars</label>
+                <input type="radio" id="cstar3" name="buscondition" value="3" />
+                <label for="cstar3" title="text">3 stars</label>
+                <input type="radio" id="cstar2" name="buscondition value="2" />
+                <label for="cstar2" title="text">2 stars</label>
+                <input type="radio" id="cstar1" name="buscondition" value="1" />
+                <label for="cstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate your DRIVER'S PUNCTUALITY </label><br>
+              <div class="rate">
+                <input type="radio" id="pstar5" name="punctuality" value="5" />
+                <label for="pstar5" title="text">5 stars</label>
+                <input type="radio" id="pstar4" name="punctuality" value="4" />
+                <label for="pstar4" title="text">4 stars</label>
+                <input type="radio" id="pstar3" name="punctuality" value="3" />
+                <label for="pstar3" title="text">3 stars</label>
+                <input type="radio" id="pstar2" name="punctuality" value="2" />
+                <label for="pstar2" title="text">2 stars</label>
+                <input type="radio" id="pstar1" name="punctuality" value="1" />
+                <label for="pstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate DRIVING SKILLS   </label><br>
+              <div class="rate">
+                <input type="radio" id="wstar5" name="driving" value="5" />
+                <label for="wstar5" title="text">5 stars</label>
+                <input type="radio" id="wstar4" name="driving" value="4" />
+                <label for="wstar4" title="text">4 stars</label>
+                <input type="radio" id="wstar3" name="driving" value="3" />
+                <label for="wstar3" title="text">3 stars</label>
+                <input type="radio" id="wstar2" name="driving" value="2" />
+                <label for="wstar2" title="text">2 stars</label>
+                <input type="radio" id="wstar1" name="driving" value="1" />
+                <label for="wstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate SAFETY DURING BUS TRAVEL </label><br>
+              <div class="rate">
+                <input type="radio" id="clstar5" name="safety" value="5" />
+                <label for="clstar5" title="text">5 stars</label>
+                <input type="radio" id="clstar4" name="safety" value="4" />
+                <label for="clstar4" title="text">4 stars</label>
+                <input type="radio" id="clstar3" name="safety" value="3" />
+                <label for="clstar3" title="text">3 stars</label>
+                <input type="radio" id="clstar2" name="safety" value="2" />
+                <label for="clstar2" title="text">2 stars</label>
+                <input type="radio" id="clstar1" name="safety" value="1" />
+                <label for="clstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate DRIVER'S BEHAVIOUR  </label><br>
+              <div class="rate">
+                <input type="radio" id="astar5" name="behaviour" value="5" />
+                <label for="astar5" title="text">5 stars</label>
+                <input type="radio" id="astar4" name="behaviour" value="4" />
+                <label for="astar4" title="text">4 stars</label>
+                <input type="radio" id="astar3" name="behaviour" value="3" />
+                <label for="astar3" title="text">3 stars</label>
+                <input type="radio" id="astar2" name="behaviour" value="2" />
+                <label for="astar2" title="text">2 stars</label>
+                <input type="radio" id="astar1" name="behaviour" value="1" />
+                <label for="astar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+              <label>Rate COMFORT AND SEATING ARRANGEMENT </label><br>
+              <div class="rate">
+                <input type="radio" id="lstar5" name="comfort" value="5" />
+                <label for="lstar5" title="text">5 stars</label>
+                <input type="radio" id="lstar4" name="comfort" value="4" />
+                <label for="lstar4" title="text">4 stars</label>
+                <input type="radio" id="lstar3" name="comfort" value="3" />
+                <label for="lstar3" title="text">3 stars</label>
+                <input type="radio" id="lstar2" name="comfort" value="2" />
+                <label for="lstar2" title="text">2 stars</label>
+                <input type="radio" id="lstar1" name="comfort" value="1" />
+                <label for="lstar1" title="text">1 star</label>
+              </div>
+              <br><br>
+
+
+              <div class="form-group">
+                <label for="comment">Additional Comments (if any):</label>
+                <textarea class="form-control" rows="5" id="comment" name="transportcomment"></textarea>
+              </div>
+               
+              <br>
+              <input type="submit" name="submit" value="Submit" class="btn btn-success">
+            </form>
+      </div>
+    </div>
+    <hr>
+
+    <center>
+      <div>
+        <a href="/"><button type="submit" ">HOMEPAGE
+          <style>button{font-size: medium;
+          padding: 15px 32px;
+          text-align: center; height: fit-content;
+          border-radius: 40px;
+          background-color: rgb(60, 60, 196);
+          color: rgb(236, 236, 226);
+          font-weight: bold;}</style></button></a>
+      </div>   
+    </center>
+     
+    <br>
+    <br>
+    <hr>
+</div>
+
+</body>
+</html>
+
+
+
